@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+html{
+	/* Desplazamiento suave */
+	scroll-behavior:smooth;
+}
+.navbar{
+	box-shadow:2px 2px 5px #000;
+}
+
+.navbar .nav-item.nav-link{
+	color: #FFFFFF;
+}
+
+.main-header{
+	position: relative;
+	background: url(../img/background.jpg);
+	background-size: cover;
+	min-height: 700px;
+}
+
+.background-overlay{
+	position: absolute;
+	background: rgba(48, 51, 107, .7);
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.form-control, .btn{
+	border-radius: 0.3rem;
+}
+
+.team, footer{
+	background:#30336b; 
+}
+/*  */
+.form-control-lg, .btn1 {
+    height: calc(2.875rem + 2px);
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}

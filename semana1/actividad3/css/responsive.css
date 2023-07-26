@@ -1,0 +1,47 @@
+body{
+    background: #C9D6FF; 
+    background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF); 
+    background: linear-gradient(to right, #E2E2E2, #C9D6FF); 
+    margin: 70px;
+    font-family: tahoma;
+}
+
+.main{
+    width: 70%;
+    margin: auto;
+}
+
+.despedida{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+
+/* Media queris */
+@media screen and (max-width: 992px) {
+    .main{
+        width: 90%;
+    }
+    h2{
+        text-align: justify;
+    }
+  }
+
+  @media screen and (max-width: 552px) {
+    body{
+        margin: 40px;
+        font-family: tahoma;
+        font-size: 9px;
+    }
+
+    .main{
+        padding-top: 20px;
+        width: 98%;
+    }
+    h2{
+        text-align: justify;
+    }
+  }
