@@ -31,29 +31,31 @@
 
 .galeria{
 	margin:auto;
-	width: 80%;
+	margin-bottom: 70px;
+	width: 95%;
 	padding: 20px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap: 100px;
+	/* gap: 100px; */
 	
 }
 
 .galeria__item{
 	width: 300px;
 	margin: 10px;
+	border: 5px solid white;
 }
 
 
 .galeria__img{
 	display: block;
 	max-width: 100%;
-	border-radius: 4px;	
 }
 
-.galeria__img:hover{
-	box-shadow: 7px 7px 12px 0px rgba(127,127,127,0.8);
+.galeria__item:hover{
+	border: 5px solid rgb(121, 21, 133);
+	filter: brightness(0.7);
 	cursor: pointer;
 }
 
@@ -106,7 +108,7 @@
 }
 
 @media (max-width:768px){
-.galeria__item{
+.galeria__item {
 	width: 250px;
 	}
 }

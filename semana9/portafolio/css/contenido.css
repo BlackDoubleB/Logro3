@@ -70,9 +70,26 @@ article p{
 }
 
 aside {
+	display: grid;
+	grid-template-columns: 80% 20%;
+	grid-template-rows: 70px 1fr;
 	padding-top: 30px;
-	width:60%;
+	width:100%;
 	text-align: justify;
+}
+
+.aside a{
+	grid-row: 3/3;
+}
+
+.aside .saludo{
+	padding-left: 20px;
+	grid-area: 1/2/3/2;
+	width: 100%;
+	height: 100%;
+}
+.aside p{
+	grid-row: 2/2;
 }
 
 aside h2{
@@ -302,7 +319,7 @@ footer {
 	}
 	aside {
 		padding: 10px;
-		width: 80%;
+		width: 100%;
 	}
 		
 	.cont-iconos {
@@ -318,6 +335,7 @@ footer {
 	
 	aside {
 		width: 100%;
+		grid-template-columns: 1fr;
 	}	
 	.cont-iconos {
 		padding: 5px 0 5px 0;
@@ -325,6 +343,10 @@ footer {
 	}
 	footer {
 		clear: both;	
+	}
+
+	.aside .saludo{
+		display: none;
 	}
 }
 
